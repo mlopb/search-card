@@ -33,6 +33,7 @@ const MiApi = () => {
     }
 
     const foundCards = await res.json();
+    console.log(foundCards)
     let cardsData = [];
 
     await foundCards.data.forEach((card) => {
